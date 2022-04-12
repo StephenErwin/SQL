@@ -1,0 +1,22 @@
+create table store (id integer primary key, item text, cost integer, quantity integer, color text);
+
+insert into store values
+(1, "bike", 50, 10, "red"),
+(2, "shirts", 30, 5, "black"),
+(3, "pants", 20, 7, "blue"),
+(4, "purses", 4, 5, "pink"),
+(5, "dogs", 8, 9, "brown"),
+(6, "cereal", 2, 9, "plain"),
+(7, "books", 4, 7, "blue"),
+(8, "magazines", 9, 7, "black"),
+(9, "bread", 1, 6, "brown"),
+(10, "meat", 5, 5, "red"),
+(11, "sugar", 3, 4, "white"), 
+(12, "candy", 4, 7, "multi color"),
+(13, "toothe paste", 2, 5, "teal"), 
+(14, "milk", 4, 2, "white"),
+(15, "cheese", 2, 6, "orange")
+;
+
+select * from store where cost >= 2 order by cost;
+select sum(quantity) from store;
